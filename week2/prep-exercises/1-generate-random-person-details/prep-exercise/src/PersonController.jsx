@@ -9,7 +9,6 @@ const PersonController = () => {
     const data = await reponse.json();
 
     const person = data.results[0];
-    console.log(person);
 
     const cleanedData = {
       first_name: person.name.first,
@@ -19,7 +18,6 @@ const PersonController = () => {
     };
 
     setPerson(cleanedData);
-    console.log(cleanedData);
   };
 
   useEffect(() => {
